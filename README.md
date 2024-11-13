@@ -26,7 +26,8 @@ MonProjet/
 │   ├── Startup.cs          
 │   └── appsettings.json    
 │
-├── frontend/               
+
+── frontend/               
 │   ├── public/             
 │   │   └── index.html      
 │   ├── src/                
