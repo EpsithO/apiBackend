@@ -63,29 +63,35 @@ Node.js et npm pour le front-end en Vue.js.
 ## Installation
 
 Clonez ce dépôt :
+```
 git clone https://github.com/EpsithO/apifront.git
 cd apifront
+```
 Installation des dépendances pour le back-end :
-Accédez au dossier backend/ :
+  Accédez au dossier backend/ :
+```
 cd backend
 dotnet restore
+```
 Installation des dépendances pour le front-end :
-Accédez au dossier frontend/ et exécutez :
-cd ../frontend
-npm install
+  Accédez au dossier frontend/ et exécutez :
+```
+  cd ../frontend
+  npm install
+```
 
 ## Lancer les serveurs
 
 Back-end (API en C#)
 Depuis le dossier backend, lancez le serveur :
-  dotnet run
+ ``` dotnet run```
 L’API est disponible sur http://localhost:5000 ou https://localhost:5001.
 
 
 
 Front-end (Vue.js)
 Depuis le dossier frontend, lancez le serveur :
-  npm run serve
+ ``` npm run serve```
 Le front-end est accessible à http://localhost:8080.
 
 
@@ -120,7 +126,8 @@ frontend/
 Les contributions sont les bienvenues ! Suivez ces étapes :
 
 Forkez le projet.
-Créez une branche (git checkout -b feature/NouvelleFonctionnalité).
-Commitez vos changements (git commit -m 'Ajoute nouvelle fonctionnalité').
-Poussez la branche (git push origin feature/NouvelleFonctionnalité).
+Créez une branche : ```(git checkout -b feature/NouvelleFonctionnalité).```
+Commitez vos changements : ```(git commit -m 'Ajoute nouvelle fonctionnalité').```
+Poussez la branche : ```(git push origin feature/NouvelleFonctionnalité).```
+
 Créez une pull request sur le dépôt principal.
