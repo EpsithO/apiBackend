@@ -16,12 +16,16 @@ MonProjet/
 ├── backend/                 
 │   ├── Controllers/        
 │   │   └── ProductsController.cs
+
 │   ├── Models/             
 │   │   └── Product.cs
+
 │   ├── Services/           
 │   │   └── ProductService.cs
+
 │   ├── Repositories/       
 │   │   └── ProductRepository.cs
+
 │   ├── Program.cs          
 │   ├── Startup.cs          
 │   └── appsettings.json    
