@@ -1,0 +1,87 @@
+@startuml
+actor Citoyen
+actor Modérateur
+actor Administrateur
+actor SuperAdministrateur
+
+usecase "Lister les ressources" as UC1
+usecase "Lister les ressources restreintes" as UC2
+usecase "Filtrer et trier les ressources" as UC3
+usecase "Afficher le contenu d'une ressource" as UC4
+usecase "Ajouter une ressource" as UC5
+usecase "Éditer une ressource" as UC6
+usecase "Supprimer une ressource" as UC7
+usecase "Suspendre une ressource" as UC8
+usecase "Ajouter une catégorie de ressources" as UC9
+usecase "Éditer une catégorie de ressources" as UC10
+usecase "Supprimer une catégorie de ressources" as UC11
+usecase "Créer un compte citoyen" as UC12
+usecase "Désactiver un compte citoyen" as UC13
+usecase "Réactiver un compte citoyen" as UC14
+usecase "Créer un compte modérateur" as UC15
+usecase "Créer un compte administrateur" as UC16
+usecase "Créer un compte super-administrateur" as UC17
+usecase "Valider une ressource pour publication" as UC18
+usecase "Partager une publication" as UC19
+usecase "Ajouter un commentaire" as UC20
+usecase "Modérer les commentaires" as UC21
+usecase "Répondre à un commentaire" as UC22
+usecase "Ajouter une ressource aux favoris" as UC23
+usecase "Retirer une ressource des favoris" as UC24
+usecase "Indiquer une ressource comme exploitée" as UC25
+usecase "Indiquer une ressource comme non exploitée" as UC26
+usecase "Mettre de côté une ressource" as UC27
+usecase "Annuler une mise de côté" as UC28
+usecase "Afficher un tableau de bord de progression" as UC29
+usecase "Démarrer une activité/jeu" as UC30
+usecase "Inviter des participants" as UC31
+usecase "Échanger des messages" as UC32
+usecase "Afficher le tableau de bord statistiques" as UC33
+usecase "Filtrer les statistiques" as UC34
+usecase "Exporter les statistiques" as UC35
+
+Citoyen -> UC1
+Citoyen -> UC2
+Citoyen -> UC3
+Citoyen -> UC4
+Citoyen -> UC5
+Citoyen -> UC19
+Citoyen -> UC20
+Citoyen -> UC22
+Citoyen -> UC23
+Citoyen -> UC24
+Citoyen -> UC25
+Citoyen -> UC26
+Citoyen -> UC27
+Citoyen -> UC28
+Citoyen -> UC29
+Citoyen -> UC30
+Citoyen -> UC31
+Citoyen -> UC32
+
+Modérateur -> UC18
+Modérateur -> UC21
+
+Administrateur -> UC1
+Administrateur -> UC2
+Administrateur -> UC3
+Administrateur -> UC4
+Administrateur -> UC5
+Administrateur -> UC6
+Administrateur -> UC7
+Administrateur -> UC8
+Administrateur -> UC9
+Administrateur -> UC10
+Administrateur -> UC11
+Administrateur -> UC12
+Administrateur -> UC13
+Administrateur -> UC14
+Administrateur -> UC33
+Administrateur -> UC34
+Administrateur -> UC35
+
+SuperAdministrateur -> UC15
+SuperAdministrateur -> UC16
+SuperAdministrateur -> UC17
+
+@enduml
